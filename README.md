@@ -1,4 +1,4 @@
-![SpaceInvadersphoto](https://github.com/Saramiss7/Calculator_JS/raw/main/Calculator.png?raw=true)
+<img src="https://github.com/Saramiss7/Calculator_JS/raw/main/Calculator.png?raw=true" alt="Calculator Screenshot" width="250"/>
 
 ## 🚀 DESCRIPTION (ENGLISH)
  # Calculator_JS
