@@ -5,39 +5,38 @@
     padding: 0;
 }
 
-html, body{
+html, body #fullheight{
     min-height: 100% !important;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffe5ec;
+    background-color: black;
 }
 
 body, .container{
    height: 100%;
-   background-color: #ffe5ec;
+   background-color: black;
 }
 
 #Resultado{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    color: rgb(0, 0, 0);
+    color: white;
     height: 39%;
+    background-color: black;
 }
 
-#input{
-    display: block;
-    font-size: 210px;
-    margin-right: 5%;
-    text-align: right;
-    color:black;
-    border:none;
+#Resultado span {
+    font-size: 2100px;
+    margin-right: 60px;
+    justify-self: flex-end;
+    color : white;
 }
 
 .Botones{
     width: 100%;
     height: 100%;
-    background-color: #ffe5ec;
+    background-color: black;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
@@ -47,8 +46,8 @@ body, .container{
     justify-content: center;
     align-items: center;
     font-size: 100px;
-    height:167px;
-    width: 168px;
+    height:160px;
+    width: 175px;
     color: white;
     border-radius: 100%;
     margin: 2px;
@@ -58,18 +57,37 @@ body, .container{
     align-self: center;
     justify-self: center;
 }
+#input{
+    display: block;
+    font-size: 210px;
+    margin-right: 5%;
+    text-align: right;
+    color:white;
+    border:none;
+    background-color: black;
+}
 
 .grupa{
-    background-color: #ff8fab;
+    background-color: grey;
     border: none;
-} 
+    color: black;
+ } 
 
 .grupb{
-    background-color: #fb6f92;
+    background-color: #ff9f0a;
     border: none;
 }
 
 .number, .decimal, .logo{
-    background-color: #ffc2d1;
+    background-color: #343434;
     border: none;
+}
+
+.item0{
+    background-color: #343434;
+    width: 435px;
+    border-radius: 130px;
+    grid-column: span 2;
+    border: none;
+    margin: 10px;
 }

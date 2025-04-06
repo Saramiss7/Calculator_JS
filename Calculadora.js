@@ -5,7 +5,7 @@ const $input = document.querySelector('#input');
 
 let result = ""
 let freeze = ""
-$numnegatiu.addEventListener('click', convertnum)
+
 $clearButton.addEventListener('click', clearResult)
 $calculateButton.addEventListener('click', calculateResult)
 
@@ -37,11 +37,11 @@ function buttonpressed(event) {
         $input.value = ""
     }
 
-    const operators = ['+','-','*','/'];
+    const operators = ['/','*','+','-'];
 
     if (operators.includes(result[result.length -1]) && operators.includes(value)){
         $input.value = $input.value.replace(/.$/, value)
-        result.valueOf = $input.value.replace(/.$/, value)
+        result.value = $input.value.replace(/.$/, value)
 
         return
     }
@@ -58,9 +58,9 @@ function calculateResult(){
     catch (e) {
         $input.value = "ERROR"
         setTimeout( () => {
-        if (confirm("Operación erronea"))
-        {
-            clearResult()}
+        if (confirm("Operación erronea")){
+            clearResult()
+        }
         }, 0)
     }
 }
